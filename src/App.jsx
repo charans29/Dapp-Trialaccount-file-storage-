@@ -1,8 +1,16 @@
+import { Contents } from "./components/Contents"
+import { Navbar } from "./components/Navbar"
+import { useState } from "react";
+
+
 function App() {
+  const [files, setFiles] = useState([]);
+
   return (
-    <>
-      <h1 className="font-bold text-3xl">Ready to build...</h1>
-    </>
+    <div className="relative">
+      <Navbar />
+      <Contents files={files} setFiles={setFiles}/>
+    </div>
   )
 }
 
