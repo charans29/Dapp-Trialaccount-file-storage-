@@ -1,6 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <div style="display:flex; justify-content: space-between;
+                padding-left: 30px; padding-right: 100px;
+                box-shadow: 2px 1px 2px #eee;">
+                Dapp File Storage
+              <div style="display: flex;">
+                <div style="padding-right: 20px;color:#666">
+                  <span style="display: flex; align-items: center;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz1IIfbQhNGhXK_RalSTN-uubawDDPb8tCAA&usqp=CAU"
+                              style="width: 50px; height:50px; padding-right:1px;" title="Wallet">wallet</span>
+                </div>
+                <script>
+                  function runGuestBook() {
+                      fetch('http://localhost:3000/start-trial')
+                          .then(response => response.text())
+                          .then(data => console.log(data));
+                  }
+                  </script>
+                <button style="padding-right: 20px;color:#666" onClick="runGuestBook()">
+                  <span style="display: flex; align-items: center;">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTWyauvA4jiZx6G6Y0Q-V__SnQALcxfPFeVIRoXcNINQhVkmpGugeaCvgumcZSYMp9t_4&usqp=CAU" style="width: 20px; height:18px; padding-right:1px;" title="near social">Trail
+                  </span>
+                </button>
+                <div style="padding-right: 20px;color:#666">
+                  <span style="display: flex; align-items: center; padding-top:12px"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPliUPFNts8asWkgF0dfcYrTWF85_HqPS3KQ&usqp=CAU"
+                              style="width: 20px; height:20px; padding-right:1px;" title="Wallet">wallet</span>
+                </div>
+              </div>
+            </div>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
